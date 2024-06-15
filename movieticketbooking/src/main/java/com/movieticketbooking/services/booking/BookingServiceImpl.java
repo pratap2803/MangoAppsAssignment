@@ -35,7 +35,7 @@ public class BookingServiceImpl implements BookingService {
 //    @Transactional
     public BookingResponseDTO createBooking(BookingRequestDTO bookingRequestDTO) {
 
-        if(!checkAvailabilityOfSeats(bookingRequestDTO.getNumberOfSeats(), bookingRequestDTO.getShowId())){
+        if(checkAvailabilityOfSeats(bookingRequestDTO.getNumberOfSeats(), bookingRequestDTO.getShowId())){
             // Retrieve user and show
             User user = userRepository.findById(bookingRequestDTO.getUserId())
                     .orElseThrow(() -> new EntityNotFoundException("User not found with id: " + bookingRequestDTO.getUserId()));
