@@ -1,3 +1,6 @@
+swagger added for this repo:Please hit this url to see all endpoints  http://localhost:8080/swagger-ui/index.html
+
+
 Please follow below steps to create request payload and I have given expected response body also.
 
 -------------------------------------------------------------------------------------# Movie API Documentation---------------------------------------------------------------------------------------------------
